@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+    <target name="all">
+    </target>
+    <target name="copy">
+        <copy file="JavaWebStart.jar" todir="c:\web" />
+    </target>
+    <target name="jar">
+    <jar destfile="JavaWebStart.jar">
+        <fileset dir="build/classes"/>
+        <fileset dir="lib_for_jar"/>
+    </jar>    </target>
+</project>
